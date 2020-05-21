@@ -47,7 +47,6 @@ public:
     bool trafficLightIsGreen();
 
 private:
-
     // typical behaviour methods
     void processVehicleQueue();
 
@@ -55,7 +54,7 @@ private:
     std::vector<std::shared_ptr<Street>> _streets;   // list of all streets connected to this intersection
     WaitingVehicles _waitingVehicles; // list of all vehicles and their associated promises waiting to enter the intersection
     bool _isBlocked;                  // flag indicating wether the intersection is blocked by a vehicle
-    TrafficLight _trafficLight;
+    TrafficLight _trafficLight;       // traffic light object to simulate the traffic light phase cycling
 };
 
 #endif
